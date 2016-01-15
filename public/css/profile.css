@@ -1,0 +1,71 @@
+.profile-header {
+  display: flex;
+  font-family: "Verdana";
+  height: 110%;
+  background-color: white;
+  align-items: center;
+  justify-content: center; }
+
+.profile-user-photo {
+  flex-direction: row; }
+
+.profile-user-info {
+  flex-direction: row;
+  text-align: left;
+  padding: 1%; }
+  .profile-user-info .profile-name {
+    margin: 5px;
+    padding-bottom: 10px;
+    font-family: "Verdana"; }
+  .profile-user-info .member-since {
+    margin: 5px;
+    padding-bottom: 10px;
+    font-family: "Verdana"; }
+  .profile-user-info .profile-blurb {
+    margin: 5px;
+    font-family: "Verdana";
+    text-overflow: ellipsis;
+    height: 4em;
+    overflow: scroll;
+    margin-bottom: 10px; }
+
+.profile-img {
+  height: 120px;
+  width: 120px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 50%; }
+
+.hike {
+  float: left;
+  width: 32%;
+  margin: 0.5%;
+  background-color: white;
+  margin-top: 10px;
+  height: 200px; }
+
+.no-user-posts {
+  color: #578157;
+  font-family: 'Amatic SC';
+  font-size: 2em;
+  font-weight: bold; }
+
+.profile-posts-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  height: 60px; }
+
+.profile-icon {
+  height: 80px;
+  width: 80px; }
+
+.profile-post-title {
+  font-family: "Verdana"; }
+
+.profile-post-location {
+  font-family: "Verdana";
+  color: #ccc; }
+
+/*# sourceMappingURL=profile.css.map */

@@ -1,0 +1,54 @@
+<!-- Navigation -->
+  {{> navbar }}
+
+  <!-- Filter bar  visible-->
+  <div id='filter-bar' class='filter'>
+    <div class='filter-components'>
+      <p class='filter-component half filter-call' style='text-align:left;'>Filter by category</p>
+      <button class='down-arrow' data-js='down-arrow'>
+        <img src='/images/nav_images/down_arrow.png' style='height:40px;width:40px;'/>
+      </button>
+    </div>
+
+  <!-- Filter bar hidden -->
+  <div id='filter-drop-down' class='hidden drop-down' data-js='drop-down'>
+    <div class='tag-icon' data-tag="desert" data-js='tag-icon'><img src='/images/tag_images/desert.png' class='navicon'/></div>
+    <div class='tag-icon' data-tag="feather" data-js='tag-icon'><img src='/images/tag_images/feather.png' class='navicon'/></div>
+    <div class='tag-icon' data-tag="lake" data-js='tag-icon'><img src='/images/tag_images/lake.png' class='navicon'/></div>
+    <div class='tag-icon' data-tag="urban" data-js='tag-icon'><img src='/images/tag_images/urban.png' class='navicon'/></div>
+    <div class='tag-icon' data-tag="tree" data-js='tag-icon'><img src='/images/tag_images/tree.png' class='navicon'/></div>
+    <div class='tag-icon' data-tag="mountain" data-js='tag-icon'><img src='/images/tag_images/mountain.png' class='navicon'/></div>
+    <div class='tag-icon' data-tag="all" data-js='tag-icon'><img src='/images/tag_images/all.png' class='navicon'/></div>
+  </div>
+
+<!-- Beginning of timeline feed -->
+<div class='time-line'>
+  {{#each posts}}
+    <article class='post' data-tag="{{tag_name}}" data-js='post'>
+      <div class='tl-user-info third'>
+        <a href='/profile/{{user_id}}'>
+          <img class='profile-img-placeholder' src='{{photo_url}}' alt='User Profile Photo'>
+          <p class='tl-user-name'>{{username}}</p>
+        </a>
+      </div>
+      <div class='tl-hike-info third'>
+        <a href="/post/{{post_id}}">
+          <h1 class='tl-hike-name'>{{post_title}}</h1>
+        </a>
+        <a href="/location/{{post_id}}">
+          <p class='tl-hike-location' data-js="geolocation">{{lat}}, {{long}}</p>
+        </a>
+      </div>
+      <div class='tl-tag third' data-tag="{{tag_name}}" data-js='tl-tag'>
+        <img src='/images/tag_images/{{tag_name}}.png' class='icon'/>
+      </div>
+    </article>
+  {{/each}}
+</div>  <!-- End of timeline feature -->
+
+<!-- Footer -->
+<footer class='app-footer'>
+  <p>Copyright, Mountain Rangers 2016. All rights reserved.</p>
+</footer>
+
+<script src="/javascripts/timeline.js" type="text/javascript"></script>

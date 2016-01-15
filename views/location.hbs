@@ -1,0 +1,21 @@
+<!-- Navigation -->
+{{> navbar }}
+
+<style>
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #google-map {
+    height: 89%;
+  }
+</style>
+
+<div id="google-map" data-lat="{{latitude}}" data-long="{{longitude}}" ></div>
+
+<script src="/javascripts/location.js"></script>
+<script async defer
+     src="https://maps.googleapis.com/maps/api/js?key={{key}}&signed_in=true&callback=initMap">
+</script>

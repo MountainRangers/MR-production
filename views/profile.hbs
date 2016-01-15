@@ -1,0 +1,41 @@
+<!-- Navigation -->
+{{> navbar }}
+
+<!-- user about section -->
+<header class='profile-header'>
+  <div class='profile-user-photo half'>
+    <img src='{{user.photo_url}}' alt="User Profile Photo" class='profile-img' />
+  </div>
+  <div class='profile-user-info half'>
+    <h1 class='profile-name'>{{user.username}}</h1>
+    <p class='member-since'>Member since: {{date}}</p>
+    <p class='profile-blurb'>{{user.description}}</p>
+  </div>
+</header>
+
+{{#if noPosts}}
+  <div class='no-user-posts'>
+    <p>Go take a hike!</p>
+  </div>
+{{else}}
+  {{#each posts}}
+    <div class='hike'>
+      <a href="/post/{{post_id}}">
+        <div class='profile-posts-container'>
+          <h1 class="profile-post-title">{{post_title}}</h1>
+        </div>
+        <div class="profile-posts-container">
+          <img src='/images/tag_images/{{tag_name}}.png' class="profile-icon" />
+        </div>
+        <div class="profile-posts-container">
+          <p class="profile-post-location" data-js="geolocation">{{latitude}}, {{longitude}}</p>
+        </div>
+      </a>
+    </div>
+  {{/each}}
+{{/if}}
+
+<footer class='app-footer'>
+  <p>Copyright, Mountain Rangers 2016. All rights reserved.</p>
+</footer>
+<script src="/javascripts/profile.js"></script>

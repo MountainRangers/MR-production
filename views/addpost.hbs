@@ -1,0 +1,45 @@
+<!-- Navigation -->
+{{> navbar }}
+<!-- Create a post form -->
+<div class='add-post-container'>
+  <form class='create-post-form' name="post" action='/addpost' method="POST">
+    <label for="title" class='post-title'>Title</label>
+    <input name='title' type='text' placeholder="Title" class='title-input' data-js='title-input'>
+    <label for="body" class='post-body'>Description</label>
+    <textarea name='body' rows="10" cols="50" class='body-input' data-js='body-input' placeholder="Give us the dirt!"></textarea>
+    <label for="add-tags" class='post-tags'>Tag Your Hike</label>
+    <div class='tag-container'>
+      <div class='tag'>
+        <img src="/images/tag_images/mountain.png" class="icon create-post-tag-image" />
+        <input type="radio" value="mountain" name="tag" class="radio-button-list">
+      </div>
+      <div class='tag'>
+        <img src="/images/tag_images/desert.png" class="icon create-post-tag-image" />
+        <input type="radio" value="desert" name="tag" class="radio-button-list">
+      </div>
+      <div class='tag'>
+        <img src="/images/tag_images/lake.png" class="icon create-post-tag-image" />
+        <input type="radio" value="lake" name="tag" class="radio-button-list">
+      </div>
+      <div class='tag'>
+        <img src="/images/tag_images/urban.png" class="icon create-post-tag-image" />
+        <input type="radio" value="urban" name="tag" class="radio-button-list">
+      </div>
+      <div class='tag'>
+        <img src="/images/tag_images/tree.png" class="icon create-post-tag-image" />
+        <input type="radio" value="tree" name="tag" class="radio-button-list">
+      </div>
+      <div class='tag'>
+        <img src="/images/tag_images/feather.png" class="icon create-post-tag-image" />
+        <input type="radio" value="feather" name="tag" class="radio-button-list">
+      </div>
+    </div>
+    <input type='submit' value='submit' class='add-that-post-button' data-js="submit-button">
+  </form>
+</div>
+<div class="loading-modal"></div>
+<!-- Footer -->
+<footer class='app-footer'>
+  <p>Copyright, Mountain Rangers 2016. All rights reserved.</p>
+</footer>
+<script type="text/javascript" src='javascripts/makepost.js'></script>

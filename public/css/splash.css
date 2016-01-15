@@ -1,0 +1,130 @@
+.splash-intro {
+  font-family: 'Amatic SC', cursive;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 6em;
+  font-weight: 700;
+  text-align: center;
+  color: #603919; }
+
+.front-door {
+  font-family: 'Amatic SC', cursive;
+  font-size: 2em;
+  margin-top: 25px; }
+
+.color-white {
+  fill: white; }
+
+.google-button {
+  border-radius: 0;
+  width: 80%;
+  height: 75px;
+  border: none;
+  color: white;
+  font-family: "Verdana";
+  font-size: 1.2em;
+  background-color: #fc511d;
+  box-shadow: 0 8px 0 #b70900, 0 15px 20px rgba(0, 0, 0, 0.35);
+  transition: .4s all ease-in;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  margin-bottom: 75px; }
+
+.google-button:hover {
+  border-radius: 0;
+  width: 80%;
+  height: 75px;
+  border: none;
+  color: black;
+  font-family: "Verdana";
+  font-size: 1.2em;
+  background-color: white;
+  box-shadow: white, 0 15px 20px white;
+  transition: .4s all ease-in;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  padding-top: 3px;
+  transform: translateY(2px);
+  box-shadow: 0 4px 0 white, 0 8px 6px rgba(0, 0, 0, 0.45);
+  margin-bottom: 75px; }
+
+.google-button span {
+  position: relative; }
+
+.splash-content {
+  height: 100%;
+  background-color: #dae8d6; }
+
+#contento {
+  background-color: #dae8d6; }
+
+.splash-body {
+  margin: 0;
+  background: #dae8d6;
+  transition: 10s ease;
+  height: 300px;
+  width: 100%;
+  margin: 0 auto; }
+
+.cont {
+  width: 100%;
+  height: 0;
+  margin: 0 auto; }
+
+.sky {
+  width: 100%;
+  height: 250px;
+  z-index: 2;
+  background: linear-gradient(#036, #17b, #2cb);
+  transition: 5s ease;
+  margin: 0 auto;
+  margin-bottom: 35px; }
+
+.sky-dawn {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  top: 0;
+  background: linear-gradient(#78d, #a8d, #eeb);
+  opacity: 0;
+  transition: 5s ease;
+  margin: 0 auto; }
+
+.sky-day {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  top: 0;
+  background: linear-gradient(#1bf, #6df, #bfe);
+  opacity: 0;
+  transition: 5s ease;
+  margin: 0 auto; }
+
+.show {
+  opacity: 1; }
+
+.foreground {
+  position: relative;
+  width: 100%;
+  z-index: 10;
+  fill: #036;
+  margin: 0 auto; }
+
+.tagline p {
+  font-family: 'Amatic SC', cursive;
+  width: 100%;
+  font-size: 3em;
+  font-weight: 700;
+  color: #603919;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 30px; }
+
+/*# sourceMappingURL=splash.css.map */

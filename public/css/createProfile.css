@@ -1,0 +1,87 @@
+.make-profile-container {
+  background-color: white;
+  height: 920px; }
+
+.tag-container {
+  display: flex;
+  width: 100%; }
+
+.create-post-form {
+  width: 90%; }
+
+.tag {
+  flex-direction: row;
+  width: 15%; }
+
+label {
+  display: block; }
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'verdana'; }
+  main img {
+    margin-top: 30px;
+    border-radius: 50%;
+    flex-grow: 0; }
+  main label {
+    display: block; }
+
+.choose-name {
+  margin: 20px; }
+
+.create-profile-form {
+  font-size: 1.6em;
+  margin-top: 30px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px; }
+  .create-profile-form .display-name {
+    font-size: 60%;
+    align-self: left;
+    color: black; }
+
+.submit-profile-button {
+  border-radius: 0;
+  width: 80%;
+  height: 45px;
+  border: none;
+  color: white;
+  font-family: "Verdana";
+  font-size: .7em;
+  background-color: #fc511d;
+  box-shadow: 0 8px 0 #b70900, 0 15px 20px rgba(0, 0, 0, 0.35);
+  transition: .4s all ease-in;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  margin-bottom: 75px; }
+
+.submit-profile-button:hover {
+  border-radius: 0;
+  width: 80%;
+  height: 45px;
+  border: none;
+  color: green;
+  font-family: "Verdana";
+  font-size: .7em;
+  background-color: white;
+  box-shadow: white, 0 15px 20px white;
+  transition: .4s all ease-in;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  padding-top: 3px;
+  transform: translateY(2px);
+  box-shadow: 0 4px 0 white, 0 8px 6px rgba(0, 0, 0, 0.45);
+  margin-bottom: 75px; }
+
+/*# sourceMappingURL=createProfile.css.map */

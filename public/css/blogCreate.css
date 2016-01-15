@@ -1,0 +1,156 @@
+.add-post-container {
+  height: 820px;
+  background-color: white; }
+
+label {
+  display: block; }
+
+input {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  margin-left: 10%;
+  width: 90%;
+  height: 4em;
+  background-color: white;
+  border: none;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid #d3d3d3; }
+  input .description-input {
+    font-size: 1em; }
+
+textarea {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  margin-left: 10%;
+  width: 90%;
+  height: 4em;
+  background-color: white;
+  border: none;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  resize: none;
+  outline: none;
+  border: 1px solid #d3d3d3; }
+
+textarea::-webkit-input-placeholder {
+  /* Safari, Chrome and Opera */
+  color: #e6e6e6; }
+
+input::-webkit-input-placeholder {
+  /* Safari, Chrome and Opera */
+  color: #e6e6e6; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #e6e6e6; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #e6e6e6; }
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #e6e6e6; }
+
+::-ms-input-placeholder {
+  /* Edge */
+  color: #e6e6e6; }
+
+:placeholder-shown {
+  /* Standard one last! */
+  color: #e6e6e6; }
+
+.tag-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-left: 10%; }
+
+.tag-toggle {
+  flex-direction: row; }
+
+.create-post-form {
+  height: 100%;
+  text-align: center;
+  font-family: 'Noto Sans', sans-serif; }
+
+.post-title {
+  padding-top: 30px;
+  text-align: left;
+  margin-left: 10%;
+  font-family: 'Amatic SC';
+  font-size: 2em; }
+
+.post-body, .post-tags {
+  text-align: left;
+  margin-left: 10%;
+  font-family: 'Amatic SC';
+  font-size: 2em;
+  margin-bottom: 30px;
+  margin-top: 20px; }
+
+.title-input {
+  height: 60px;
+  font-size: 1.3em; }
+
+.body-input {
+  height: 90px;
+  font-size: 1.3em; }
+
+.add-that-post-button {
+  border-radius: 0;
+  width: 80%;
+  height: 75px;
+  border: none;
+  color: white;
+  font-family: "Verdana";
+  font-size: 1.2em;
+  background-color: #fc511d;
+  box-shadow: 0 8px 0 #b70900, 0 15px 20px rgba(0, 0, 0, 0.35);
+  text-transform: uppercase;
+  transition: .4s all ease-in;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  -webkit-user-select: none; }
+
+.add-that-post-button:hover {
+  border-radius: 0;
+  width: 80%;
+  height: 75px;
+  border: none;
+  color: green;
+  font-family: "Verdana";
+  font-size: 1.2em;
+  background-color: white;
+  box-shadow: white, 0 15px 20px white;
+  transition: .4s all ease-in;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  padding-top: 3px;
+  transform: translateY(2px);
+  box-shadow: 0 4px 0 white, 0 8px 6px rgba(0, 0, 0, 0.45); }
+
+.loading-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8) url("/images/loading-wheel.gif") 50% 50% no-repeat; }
+
+body.loading {
+  overflow: hidden; }
+
+body.loading .loading-modal {
+  display: block; }
+
+/*# sourceMappingURL=blogCreate.css.map */

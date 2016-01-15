@@ -1,0 +1,16 @@
+<main class='make-profile-container'>
+  <header class='create-profile-header'>
+    <div class='user-image'>
+      <img src="{{profile.profilePhoto}}" alt="User Profile Photo" class='create-profile-img' />
+      <p>Welcome {{profile.displayName}}</p>
+    </div>
+  </header>
+  <form action='/makeprofile' method="POST" class='create-profile-form'>
+    <input type='text' name='userName' placeholder="What should we call you?">
+    <input type='submit' value="Complete profile" class='submit-profile-button'>
+  </form>
+</main>
+<footer class='app-footer'>
+  <p>Copyright, Mountain Rangers 2016. All rights reserved.</p>
+</footer>
+<script src="javascripts/makeprofile.js"></script>

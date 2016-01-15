@@ -1,0 +1,36 @@
+<!-- Navigation -->
+{{> navbar }}
+
+<header class="post-header">
+  <div class="post-header-component half">
+    <img src="{{post.photo_url}}" alt="User Profile Photo" class='single-post-profile-img' />
+  </div>
+  <div class="post-header-component half">
+    <p>{{post.date}}</p>
+    <a href="/location/{{post.id}}">
+      <p data-js="geolocation">{{post.latitude}}, {{post.longitude}}</p>
+    </a>
+  </div>
+</header>
+<div class='description-container'>
+  <div class="single-post-description">
+    <h2 class="single-post-description-title">{{post.title}}
+      <h2/>
+      <p class="single-post-description-text">{{post.body}}
+        <strong class="single-post-author">-- {{post.username}}</strong>
+  </div>
+  <div class="single-post-tag-container">
+    <h2 class="single-post-tag-title">{{tag.name}}</h2>
+    <img src="/images/tag_images/{{tag.name}}.png" class="icon single-post-tag-image" />
+  </div>
+  <div id= {{post.id}} class="single-post-delete-container">
+    {{#if user}}
+      <div id= {{post.id}} class="single-post-delete-container" data-js='single-post-delete-container'>
+        <input type='button' value='Delete this post!' class='delete-post' data-js='delete-post'>
+      </div>
+    {{/if}}
+  </div>
+  <footer class='app-footer'>
+    <p>Copyright, Mountain Rangers 2016. All rights reserved.</p>
+  </footer>
+  <script src="/javascripts/singlepost.js"></script>

@@ -1,0 +1,86 @@
+// scss for a single blog post view
+// Header styling
+.post-header {
+  display: flex;
+  height: 175px;
+  background-color: white;
+  width: 100%;
+  border-bottom: 2px solid rgba(247,247,247,0.56);
+  font-family: "Verdana";
+}
+.post-header-component {
+  text-align: left;
+}
+.single-post-profile-img {
+  height: 120px;
+  width: 120px;
+  margin-top: 20px;
+  margin-left: 10%;
+  border-radius: 50%;
+  text-align: center;
+}
+// post content styling
+.single-post-description > p {
+  text-align: left;
+  padding: 10%;
+  font-family: "Verdana";
+}
+.single-post-description {
+  border-bottom: 2px solid rgba(247,247,247,0.56);
+}
+.single-post-description-title {
+  text-align: left;
+  margin-left:10%;
+  padding-top: 20px;
+  font-weight: bolder;
+  font-size: 1.5em;
+  margin-bottom: 5px;
+  justify-content: center;
+  font-family: "verdana";
+}
+.single-post-description-text {
+  text-align: left;
+  font-family: "verdana";
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.single-post-tag-container {
+  text-align: left;
+  height: 80px;
+  margin-top: 20px;
+}
+.description-container {
+  background-color: white;
+  height: 100%;
+}
+.single-post-tag-title {
+  text-align: left;
+  margin-left: 10%;
+}
+.single-post-tag-image {
+  text-align: left;
+  margin-left: 10%;
+}
+.single-post-author {
+  display: block;
+  color: #424242;
+  margin-top: 20px;
+}
+.delete-post {
+  border-radius: 0;
+  width: 80%;
+  height: 40px;
+  border: none;
+  color: white;
+	font-family: "Verdana";
+  font-size: .6em;
+  background-color: #fc511d;
+  box-shadow: 0 8px 0 rgb(183,9,0),
+  0 5px 10px rgba(0,0,0,.35);
+  transition: .4s all ease-in;
+  outline: none;
+  text-align: center;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  margin-bottom: 50px;
+}
